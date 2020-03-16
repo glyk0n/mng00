@@ -3,6 +3,7 @@ Título
 
 ## Structure
 
+```bash
 mng00/
 	|- .docker
 	|	|- docker-compose.yaml
@@ -11,7 +12,7 @@ mng00/
 	|- composer.phar
 	|- README.md
 	|- sftp-config.json
-
+```
 
 ## docker-compose.yaml
 
@@ -49,8 +50,8 @@ $ docker-compose -f .docker/docker-compose up -d
 $ docker exec -it docker_mng_1 sh
 
 
-/var/www# export http_proxy=http://USER:PASSWORD@http.internetpsa.inetpsa.com
-/var/www# export https_proxy=http://USER:PASSWORD@http.internetpsa.inetpsa.com
+/var/www# export http_proxy=***
+/var/www# export https_proxy=***
 /var/www# php composer.phar require monolog/monolog
 
 
@@ -61,6 +62,7 @@ Accesible desde `http://127.0.0.1:8080`.
 
 ## Structure
 
+```bash
 mng00/
 	|- composer.json
 	|- composer.lock 		X
@@ -74,5 +76,6 @@ mng00/
 	|- README.md
 	|- vendor/				X
 	|- sftp-config.json 	X
+```
 
 Nota: X siginifica que son archivos/directorios que se añaden a .gitignore
